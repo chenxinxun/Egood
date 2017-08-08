@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "175528352033",
+    "firebase_url": "https://egood-cfadd.firebaseio.com",
+    "project_id": "egood-cfadd",
+    "storage_bucket": "egood-cfadd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175528352033:android:a3466e566cc77e22",
+        "android_client_info": {
+          "package_name": "com.tapcash.egood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175528352033-9rsno168cej832osnlh31c8u4qmn2l76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tapcash.egood",
+            "certificate_hash": "bd3ef6d6724bd7dccb766ae62d70cf73637c6c03"
+          }
+        },
+        {
+          "client_id": "175528352033-o8okg5h85k7vcmu4dl19e4u1qol4bb0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5KK2S3nbXj8_BUi_k1WoORxAJaGch-XI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175528352033-o8okg5h85k7vcmu4dl19e4u1qol4bb0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

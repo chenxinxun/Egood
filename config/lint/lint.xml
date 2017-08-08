@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+	<issue id="UseSparseArrays" severity="ignore" />
+	<issue id="DisableBaselineAlignment" severity="ignore" />
+	<issue id="TrustAllX509TrustManager" severity="ignore" />
+	<issue id="SetJavaScriptEnabled" severity="ignore" />
+	<issue id="DrawAllocation" severity="ignore" />
+	<issue id="ExportedReceiver" severity="ignore" />
+	<issue id="InvalidPackage" severity="ignore" />
+	<!-- ��drawable-xhdpiΪ��Ŀ¼������Ŀ¼ֻ��֪ͨ��ͼ�� -->
+	<issue id="IconDensities" severity="ignore" />
+	<!-- CompoundDrawables��ʱ�޷��ﵽUIЧ�� -->
+	<issue id="UseCompoundDrawables" severity="ignore" />
+	<!-- ���θ���gradle�汾��ʾ -->
+	<issue id="GradleDependency" severity="ignore"/>
+	<!-- ������Rtl���⡣���֧�ְ������ģ��迪�� -->
+	<issue id="RtlHardcoded" severity="ignore"/>
+	<issue id="RtlSymmetry" severity="ignore"/>
+	<issue id="RelativeOverlap" severity="ignore"/>
+	<!-- 6.0Ȩ�����⣬�ݲ��� -->
+	<issue id="MissingPermission" severity="warning" />
+	<!-- ����CropOverlayView-->
+	<issue id="ClickableViewAccessibility" severity="ignore" />
+	<!-- ������Context.STATUS_BAR_SERVICE���������������Ϊhide���޷�����-->
+	<issue id="WrongConstant" severity="warning"/>
+
+	<!-- from  baidu -->
+    <issue id="ContentDescription" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="HardcodedDebugMode" severity="ignore" />
+    <issue id="IconDuplicates" severity="error" />
+    <issue id="IconMissingDensityFolder" severity="ignore" />
+    <issue id="MissingRegistered" severity="error" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="Overdraw" severity="ignore" />
+    <issue id="ProtectedPermissions" severity="ignore" />
+    <issue id="PxUsage" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="SpUsage" severity="ignore" />
+    <issue id="UnusedResources" severity="error">
+       <ignore path="src/main/res/values/flpush_strings.xml" />
+	   <ignore path="src/main/res/values/flpush_styles.xml" />
+    </issue>
+	<issue id="WrongConstant" severity="error">
+       <ignore path="src/main/java/com/felink/clean/business/RequestUpdateBusiness" />
+    </issue>
+	<issue id="TypographyEllipsis" severity="Warning">
+        <ignore path="src/main/res/values/flpush_strings.xml" />
+    </issue>
+</lint>
