@@ -1,6 +1,7 @@
 package com.tapcash.egood.usercenter.login;
 
 
+import com.tapcash.egood.base.BaseEntity;
 import com.tapcash.egood.base.RetrofitService;
 import com.tapcash.egood.usercenter.User;
 import com.tapcash.egood.usercenter.UserService;
@@ -30,7 +31,7 @@ public class LoginPresenter implements LoginContract.Presenter {
                 .subscribeOn(Schedulers.newThread())//请求在新的线程中执行
                 .observeOn(Schedulers.io())         //请求完成后在io线程中执行
                 .observeOn(AndroidSchedulers.mainThread())//最后在主线程中执行
-                .subscribe(new Observer<User>() {
+                .subscribe(new Observer<BaseEntity<LoginResult>>() {
 
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
@@ -38,19 +39,22 @@ public class LoginPresenter implements LoginContract.Presenter {
                     }
 
                     @Override
-                    public void onNext(User user) {
-
+                    public void onNext(BaseEntity<LoginResult> result) {
+                        if (result.content.errorCount == 0) {
+                            mView.showSuccess();
+                        } else {
+                            mView.showFailure(result.content.msg);
+                        }
                     }
 
                     @Override
                     public void onError(Throwable t) {
                         t.printStackTrace();
-                        mView.showFailure();
                     }
 
                     @Override
                     public void onComplete() {
-                        mView.showSuccess();
+
                     }
                 });
     }

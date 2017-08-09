@@ -1,5 +1,8 @@
 package com.tapcash.egood.usercenter;
 
+import com.tapcash.egood.base.BaseEntity;
+import com.tapcash.egood.usercenter.login.LoginResult;
+
 import io.reactivex.Observable;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
@@ -14,5 +17,5 @@ public interface UserService {
     /**以正常参数形式请求*/
     //Observable<User> login(@Query("userName") String username, @Query("password") String password);
     /**以json的body的形式请求*/
-    Observable<User> login(@Body User user);
+    Observable<BaseEntity<LoginResult>> login(@Body User user);
 }

@@ -44,7 +44,7 @@ public class LoginActivity extends BaseActivity<LoginContract.Presenter> impleme
     }
 
     @Override
-    public void showFailure() {
-        Toast.makeText(this, "showFailure", Toast.LENGTH_LONG).show();
+    public void showFailure(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 }
