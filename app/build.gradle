@@ -31,7 +31,9 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
     compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
     compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
-
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.rxRetrofitAdapterVersion"
     compile "com.google.firebase:firebase-core:$rootProject.firebaseVersion"
     compile "com.google.firebase:firebase-crash:$rootProject.firebaseVersion"
     testCompile "junit:junit:$rootProject.junitVersion"
@@ -41,6 +43,9 @@ dependencies {
 
 
 
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    debugCompile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
 }
 
 
